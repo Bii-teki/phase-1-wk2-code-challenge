@@ -1,0 +1,39 @@
+
+
+body {
+  background-color: #faf2e4;
+  font-family: sans-serif;
+  }
+
+h1 {
+  text-align: center;
+  font-family: serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 1px solid #57b1dc;
+  margin-top: 30px;
+}
+
+h2 {
+  color: #d1633c;
+  font-size: 1em;
+}
+.header{
+  padding: 30px;
+  background-color: aqua;
+}
+
+.home {
+  margin: 0 10%;
+  display: flex;
+}
+
+.vote {
+  flex: 1;
+  border: 2px solid yellow;
+}  
+
+.intro {
+  padding: 25px;
+  margin-right: 20px;
+} 
