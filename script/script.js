@@ -23,36 +23,10 @@ function getData(characters) {
        p.id=char.id;
        p.addEventListener('click', displayAnimalDetails)
        main.append(p);
+     
 
      }); 
 
-   
-
-    // const btn = document.getElementById('button')
-
-    // btn.addEventListener('click', (e)=>{
-    //   e.preventDefault();
-
-    // let dataArray =  Object.values(characters)
-    // for(i=0; i< dataArray.length; i++)
-    // {
-    //   console.log(characters[i])
-    //   const main = document.getElementById('main');
-    //   const h2 = document.createElement('h2');
-    //   h2.innerHTML = char1.name;
-    //     main.appendChild(h2);
-    //     const li =document.createElement('li')
-    //     h2.append('li')
-        
-    //     // const img = document.getElementById('images').src=`${char1.image}`;
-    //     // li.innerContext= img;
-
-    //     const button = document.createElement('button')
-    //     button.innerText= 'Vote';
-    //     main.append('button')
-     
-//     }
-//   })
 }
 function displayAnimalDetails(e) {
 const id = e.target.id
@@ -65,15 +39,13 @@ function createAnimalDetail(data) {
 
 }
 function votingP(e) {
-    let  vote = Number.parseInt(e.target.textContent)
+    let  vote = Number.parseInt(e.target.textContent) 
     vote += 1
-    e.target.textContent = vote;
+    e.target.textContent = vote ;
     
 }
 window.onload = fetchData
         
 
   
-//   document.addEventListener('DOMContentLoaded', function() {
-//     fetchData();
-//   });
+
