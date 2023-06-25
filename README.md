@@ -8,7 +8,7 @@
 
 ## Description
 
-AnimalKingdom is a website that alows users to vote for their favorite animal as animalkingdom.org celebrates its 10 years in existensce.
+AnimalKingdom is a website that allows users to vote for their favorite animal as animalkingdom.org celebrates its 10 years in existence.
 
 ## Setup Requirements
 
