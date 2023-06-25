@@ -1,6 +1,8 @@
 
 
 body {
+ margin-left: 50px;
+ margin-right: 50px;
   background-color: #faf2e4;
   font-family: sans-serif;
   }
@@ -17,6 +19,11 @@ h1 {
 h2 {
   color: #d1633c;
   font-size: 1em;
+}
+.votes{
+  height: 30px;
+  width: 100px;
+  background-color: darkolivegreen;
 }
 .home{
   margin: 0px 15px;
@@ -37,3 +44,39 @@ h2 {
 
 
 
+
+.wrapper {
+  max-width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 400px 400px 400px;
+    background-color: #fff;
+    color: #444;
+    max-height: 1080px;
+  }
+
+  .box {
+    background-color: hwb(0 27% 73%);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+
+  }
+
+  .a {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  .b {
+    grid-column: 3 ;
+    grid-row: 1 / 3;
+  }
+  .c {
+    grid-column: 1 ;
+    grid-row: 2 ;
+  }
+  .d {
+    grid-column: 2;
+    grid-row: 2;
+  }

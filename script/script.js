@@ -23,6 +23,12 @@ function getData(characters) {
        p.id=char.id;
        p.addEventListener('click', displayAnimalDetails)
        main.append(p);
+       const bt = document.createElement('button') 
+       bt.id=char.id;
+       bt.addEventListener('click', displayAnimalDetails)
+       bt.textContent="view"
+       p.append(bt)
+       bt.style.color='red'
      
 
      }); 
@@ -34,7 +40,7 @@ const id = e.target.id
 }
 function createAnimalDetail(data) {
    image.src = data.image
-   votes.textContent = data.votes
+   votes.textContent =  data.votes + 'Click to Vote'
    votes.addEventListener('click', votingP)
 
 }
