@@ -56,6 +56,7 @@ function getData(characters) {
 
 //Object.assign():
       Object.assign(bt.style, bt_stylying);
+      
      
      }); 
 
@@ -77,7 +78,13 @@ function createAnimalDetail(data) {
       votes.addEventListener('click', votingP)
       // assigns votes variable a value from json file 
       // add an event to it with a callback to voting
-
+      const bt_stylying={
+            display: "block",
+            color: "white",
+            width: "100px",
+            backgroundColor: '#444',
+            height: "26px"
+            }
       //Object.assign():
       Object.assign(votes.style, bt_stylying);
      
