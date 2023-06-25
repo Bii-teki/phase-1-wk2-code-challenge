@@ -13,7 +13,7 @@ AnimalKingdom is a website that alows users to vote for their favorite animal as
 ## Setup Requirements
 
 - Git
-- Web-browser or your choice
+- Web browser or your choice
 - Github
 - NPM (https://www.npmjs.com/)
 
@@ -47,7 +47,7 @@ The following have been used on this project:
 
 
 
-#### Live link to view the project <a href="https://jobs-portal-frontend.netlify.app/">View Jobs Portal</a>
+#### Live link to view the project <a href="https://bii-teki.github.io/phase-1-wk2-code-challenge/">View Animal Kingdom</a>
 
 
 
@@ -89,10 +89,10 @@ To make a contribution to the code used or any suggestions you can click on the 
 
 ## License
 
-Copyright (c) 2022 Wilson Kinyua Muthoni.
+Copyright (c) 2023 Geoffrey Bii
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files , to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
