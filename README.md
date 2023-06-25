@@ -55,11 +55,11 @@ The following have been used on this project:
 
 - Homepage
 
-  <img src="./images/home.jpg" />
+  <img src="./images/home.png" />
 
 - voting
 
-   <img src="./images/voting page.jpg" />
+   <img src="./images/voting page.png" />
 
 
 ## Known Bugs
