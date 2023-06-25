@@ -55,27 +55,12 @@ The following have been used on this project:
 
 - Homepage
 
-  <img src="./screenshots/Homepage.png" alt="screenshot" />
+  <img src="./images/home.jpg" />
 
-- Job Details
+- voting
 
-  <img src="./screenshots/Job Details.png" alt="screenshot" />
+   <img src="./images/voting page.jpg" />
 
-- Create Job Form Page
-
-  <img src="./screenshots/Create Job Page.png" alt="screenshot" />
-
-- Jobs List
-
-  <img src="./screenshots/Jobs List.png" alt="screenshot" />
-
-- Login Page
-
-  <img src="./screenshots/Login.png" alt="screenshot" />
-
-- Register Page
-
-  <img src="./screenshots/Register.png" alt="screenshot" />
 
 ## Known Bugs
 
