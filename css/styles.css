@@ -1,10 +1,13 @@
 
 
 body {
- margin-left: 50px;
- margin-right: 50px;
+ margin-left: 100px;
+ margin-right: 100px;
   background-color: #faf2e4;
   font-family: sans-serif;
+  }
+  em{
+    color: #FF3D00;
   }
 
 h1 {
@@ -17,13 +20,19 @@ h1 {
 }
 
 h2 {
-  color: #d1633c;
-  font-size: 1em;
+  text-align: center;
+  font-family: serif;
+  font-weight: normal;
+ margin-right: 0px;
+  margin-top: 30px;
 }
-.votes{
-  height: 30px;
-  width: 100px;
-  background-color: darkolivegreen;
+p {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  font-size: 15px;
+  
 }
 .home{
   margin: 0px 15px;
@@ -44,39 +53,73 @@ h2 {
 
 
 
-
-.wrapper {
-  max-width: 100%;
+  .home, .right {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 400px 400px 400px;
-    background-color: #fff;
-    color: #444;
-    max-height: 1080px;
-  }
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    align-content: center;
+}
 
-  .box {
-    background-color: hwb(0 27% 73%);
-    color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 150%;
+.heading .voter {
+    flex: 1;
+    font-family: "Sofia", sans-serif;
+}  
 
+.intro, .main {
+    margin-right: 20px;
+    padding-left:  50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+} 
+.text-center {
+  text-align: center;
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: #57b1dc;
+}
+.loader {
+  display: none;
+  width: 48px;
+  height: 48px;
+  border: 3px dotted #03095f;
+  border-style: solid solid dotted dotted;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px dotted #FF3D00;
+  border-style: solid solid dotted;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  animation: rotationBack 1s linear infinite;
+  transform-origin: center center;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+} 
 
-  .a {
-    grid-column: 1 / 3;
-    grid-row: 1;
-  }
-  .b {
-    grid-column: 3 ;
-    grid-row: 1 / 3;
-  }
-  .c {
-    grid-column: 1 ;
-    grid-row: 2 ;
-  }
-  .d {
-    grid-column: 2;
-    grid-row: 2;
-  }
