@@ -3,6 +3,16 @@ const image = document.getElementById('images')
 const votes = document.getElementById('voting')
 const loader = document.querySelector('loader')
 const intro = document.getElementById('intro');
+const res = document.getElementById('uncheker')
+
+const bt_stylying={
+      display: "block",
+      color: "white",
+      width: "150px",
+      backgroundColor: '#444',
+      alignContent: 'center',
+      height: "30px"
+      }
 
 function fetchData() {
    
@@ -57,39 +67,37 @@ function createAnimalDetail(data) {
       head.innerContent= 'Here is a cute random dog'
       intro.append(head)
       image.src = data.image
-      votes.textContent = ' '+  data.votes + 'Click to Vote'
+      votes.textContent = data.votes + "click to vote"
       votes.addEventListener('click', votingP)
-      const bt_stylying={
-      display: "block",
-      color: "white",
-      width: "150px",
-      backgroundColor: '#444',
-      alignContent: 'center',
-      height: "30px"
-      }
+
       //Object.assign():
       Object.assign(votes.style, bt_stylying);
+     
   
 
 }
-function votingP(e) {
-   
-    let  vote = Number.parseInt(e.target.textContent) 
-    vote += 1
-    e.target.textContent = vote ;
+function votingP(e) {   
 
-    
-    const bt_stylying={
-      display: "block",
-      color: "white",
-      width: "100px",
-      borderRadius: '20px',
-      backgroundColor: '#444',
-      height: "26px"
+   
+      let  vote = Number.parseInt(e.target.textContent) 
+      if(vote===0)
+      {
+      vote += 1  
+      e.target.textContent = vote
       }
-      //Object.assign():
-      Object.assign(vote.style, bt_stylying);
-}
+
+      else if(vote===1){
+      vote -= 1  
+      e.target.textContent = vote
+      }
+      else if(vote==="click to uncheck"){
+      vote=0
+      }
+    }
+
+
+
+
 window.onload = fetchData
         
 

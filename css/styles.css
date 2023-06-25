@@ -22,9 +22,10 @@ h1 {
 h2 {
   text-align: center;
   font-family: serif;
-  font-weight: normal;
- margin-right: 0px;
+  font-weight: bold;
   margin-top: 30px;
+  color: #03121a;
+  border-bottom: 1px solid #57b1dc;
 }
 p {
   color: rgba(0, 0, 0, 0.8);
