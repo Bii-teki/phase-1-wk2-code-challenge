@@ -100,12 +100,12 @@ function votingP(e) {
       if(vote===0)
       {
       vote += 1  
-      e.target.textContent = vote
+      e.target.textContent = vote + "uncheck"
       }
 
       else if(vote===1){
       vote -= 1  
-      e.target.textContent = vote
+      e.target.textContent = vote + "vote"
       }
       else if(vote==="click to uncheck"){
       vote=0
